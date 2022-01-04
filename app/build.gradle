@@ -58,9 +58,10 @@ afterEvaluate {
                 groupId = 'com.example.mycoollib'
                 artifactId = 'MyCoollib'
                 version = '1.0'
-                /*   groupId = 'com.example.parent'
+   groupId = 'com.example.parent'
                    artifactId = 'app'
-                   version = '1.0'*/
+                   version = '1.0'
+
             }
         }
     }
