@@ -2,6 +2,7 @@ package com.example.directlylib;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -34,8 +35,11 @@ public class MainActivity extends AppCompatActivity {
         float distanceBetweenPoints = LatLonDistanceCalculator.calculateDistance(
                 buenosAiresObeliscoPoint,
                 nycStatueOfLibertyPoint);
-
+        String data = getIntent().getStringExtra("DATA");
+        Toast.makeText(this,"Data received",Toast.LENGTH_LONG).show();
         Log.d("Main activity","You are inside directly lib"+distanceBetweenPoints);
+        Log.d("Main activity","You are inside directly lib data received" +
+                ""+data);
     }
 
 }
